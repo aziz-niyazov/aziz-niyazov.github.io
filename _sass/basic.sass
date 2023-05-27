@@ -18,6 +18,8 @@ body
 
 h1, h2, h3, h4, h5, h6
   font-weight: $heading-weight
+  margin: 0px
+  padding: 0px
 
 b, strong, th
   font-weight: $font-weight + 200
@@ -31,8 +33,10 @@ a
   &:hover
     text-decoration: underline
 
+
 header a, footer a, aside a
   color: inherit
+
 
 header time
   color: reduce(100)
@@ -43,6 +47,7 @@ hr
 
 article:not(:last-of-type)
   border-bottom: 1px solid reduce(14)
+
 
 blockquote
   background: reduce(6)
