@@ -8,10 +8,19 @@ Hello!
 I am a PhD candidate in IRIT lab at the University of Toulouse 3.
 
 
-<h1> Publications </h1>
+<h1> Conference Papers </h1>
 
 {% if site.show_excerpts %}
-  {% include publications.html %}
+  {% include conference_papers.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
+
+
+<h1> Workshop Papers </h1>
+
+{% if site.show_excerpts %}
+  {% include position_papers.html %}
 {% else %}
   {% include archive.html title="Posts" %}
 {% endif %}
