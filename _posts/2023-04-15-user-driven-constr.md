@@ -10,4 +10,5 @@ video: "http://youtube.com"
 icon_pdf: github
 icon_vid: envelope-square
 icon_doi: file-pdf
+image: "/images/udc.png"
 ---

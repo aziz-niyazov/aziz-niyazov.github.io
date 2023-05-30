@@ -1,0 +1,29 @@
+<header>
+  <!-- <h2><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2> -->
+  <h3>{{ include.post.title }}</h3>
+  <h4>{{ include.post.venue}}</h4>
+  {{ include.post.authors }}
+
+
+  <div class="flex-container">
+    <div><a href="{{ post.pdf | relative_url }}"   target = _blank>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_pdf }}"></use></svg>
+      PDF </a>
+    </div>
+
+    {% if post.doi %}
+    <div><a href="{{ post.video | relative_url }}" target = _blank>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_vid }}"></use></svg>
+      Video</a>
+    </div>
+    <div><a href="{{ post.doi | relative_url }}"   target = _blank>
+      <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_doi }}"></use></svg>
+      DOI  </a>
+    </div>
+
+  {% endif %}
+</div>
+
+  <!-- {%- assign date_format = site.date_format | default: "%B %d, %Y" -%} -->
+  <!-- <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time> -->
+</header>
