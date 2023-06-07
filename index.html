@@ -3,24 +3,17 @@ layout: page
 title: ""
 ---
 
-Hello!
+<div class="container">
+  <div class="profile-picture">
 
-I am a PhD candidate in IRIT lab at the University of Toulouse 3.
-
-
-<h1> Conference Papers </h1>
-
-{% if site.show_excerpts %}
-  {% include conference_papers.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
-
-
-<h1> Workshop Papers </h1>
-
-{% if site.show_excerpts %}
-  {% include position_papers.html %}
-{% else %}
-  {% include archive.html title="Posts" %}
-{% endif %}
+    <img src="\images\profile-pic.jpg">
+    <div>
+    {% include contact-info.html menu=site.external %}
+    </div>
+  </div>
+  <div class="bio">
+    <h1>About Me</h1>
+    <p>Hello! </p>
+    <p>I am a PhD candidate in IRIT lab at the University of Toulouse 3.</p>  
+  </div>
+</div>

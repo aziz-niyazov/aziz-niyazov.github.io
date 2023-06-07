@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Publications"
+---
+
+
+
+<h1> Conference Papers </h1>
+
+{% if site.show_excerpts %}
+  {% include conference_papers.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
+
+
+<h1> Workshop Papers </h1>
+
+{% if site.show_excerpts %}
+  {% include position_papers.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
