@@ -7,8 +7,8 @@ venue: ACM CHI 2023
 authors: "Aziz Niyazov, Barrett Ens, Kadek Ananta Satriadi, Nicolas Mellado, Loic Barthe, Tim Dwyer, Marcos Serrano"
 pdf: "cv.pdf"
 video: "http://youtube.com"
-icon_pdf: github
-icon_vid: envelope-square
-icon_doi: file-pdf
+icon_pdf: fa fa-file-pdf-o
+icon_vid: fa fa-youtube-play
+icon_doi: fa fa-chain
 image: "/images/udc.png"
 ---

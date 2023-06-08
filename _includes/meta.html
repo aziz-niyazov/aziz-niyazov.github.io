@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- https://www.w3schools.com/icons/fontawesome_icons_text.asp -->
+
 <header>
 
   <div class="container">
@@ -11,17 +14,17 @@
 
       <div class="flex-container-buttons">
         <div><a href="{{ post.pdf | relative_url }}"   target = _blank>
-          <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_pdf }}"></use></svg>
+          <i class="{{post.icon_pdf}}"></i>
           PDF </a>
         </div>
-    
+        
         {% if post.doi %}
         <div><a href="{{ post.video | relative_url }}" target = _blank>
-          <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_vid }}"></use></svg>
+          <i class="{{post.icon_vid}}"></i>
           Video</a>
         </div>
         <div><a href="{{ post.doi | relative_url }}"   target = _blank>
-          <svg aria-hidden="true" class="icon"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{post.icon_doi }}"></use></svg>
+          <i class="{{post.icon_doi}}"></i>
           DOI  </a>
         </div>
         {% endif %}
