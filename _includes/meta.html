@@ -19,10 +19,16 @@
         </div>
         
         {% if post.doi %}
+        <div><a href="{{ post.demo | relative_url }}" target = _blank>
+          <i class="{{post.icon_demo}}"></i>
+          Demo</a>
+        </div>
+
         <div><a href="{{ post.video | relative_url }}" target = _blank>
           <i class="{{post.icon_vid}}"></i>
-          Video</a>
+          Video Presentation</a>
         </div>
+
         <div><a href="{{ post.doi | relative_url }}"   target = _blank>
           <i class="{{post.icon_doi}}"></i>
           DOI  </a>

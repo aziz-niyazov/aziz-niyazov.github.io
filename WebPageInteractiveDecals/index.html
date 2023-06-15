@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Interactive Decals</title>
+	<link rel="stylesheet" href="pages/styleDemo.css">
+	<meta name="keywords" content="HCI, survey, greetings, IRIT, UCL">
+	<!-- <meta name="description" content="Study on FreeForm Displays"> -->
+	<!-- <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"> -->
+	<!-- <meta name="author" content="Marcos Serrano"> -->
+	<!-- <base href="http://www.irit.fr/greetings/" target="_blank"> -->
+</head>
+<body>
+	
+	<div class="header">
+		
+		<p>Interactive Decals: Developing Pervasive Freeform Interfaces Using Deformable Graphical Elements with Constraints</p>
+		<p class="subtitle">ISS 2021 Submission 5899</p>
+	</div>
+
+	<div class="navbar_index" id = "navbar_sticky">
+		<a href="index.html">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Deformation
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="pages/gifsDemoByShape.html">Grouped by Shape</a>
+				<a href="pages/gifsDemoByContent.html">Grouped by Content</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Constraints
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="pages/constraintsMovements.html">Physical Objects Occlusion</a>
+				<a href="pages/constraintsGamutShapes.html">Freeform Display Shapes</a>
+			</div>
+		</div>
+		<a href="pages/videos.html">Decal Videos</a>
+	</div>
+
+
+
+	<div class="main">	
+		<div class = "text">
+			<h>
+				This page presents the supplementary files of our paper on Interactive Decals:
+				<ul>
+					<li>The tested conditions on the study of Decal shape deformation can be accessed from the menu Decal Deformation. We present these results grouped by Decal Shape or Decal Content.
+					</li>
+					<li>The resulting interfaces from the study of Decal constraints can be accessed from the menu Decal Constraints. We show the layouts adaptation to different Physical Object Occlusions and Freeform Display Shapes </li>
+					<li>We also present videos illustrating the behaviour of decals to adapt to object occlusion and user interaction. They can be viewed from the menu Decal Videos</li>
+				</ul>
+			</h>
+
+
+
+
+		</div>
+			
+
+	</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar_sticky");
+		var sticky = navbar.offsetTop/4;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
+</body>
+</html>

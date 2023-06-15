@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Gamut Shapes</title>
+	<link rel="stylesheet" href="styleDemo.css">
+	<meta name="keywords" content="HCI, survey, greetings, IRIT, UCL">
+	<!-- <meta name="description" content="Study on FreeForm Displays"> -->
+	<!-- <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"> -->
+	<!-- <meta name="author" content="Marcos Serrano"> -->
+	<!-- <base href="http://www.irit.fr/greetings/" target="_blank"> -->
+</head>
+<body>
+	<div class="header" >
+		<p>Interactive Decals: Developing Pervasive Freeform Interfaces Using Deformable Graphical Elements with Constraints</p>
+		<p class="subtitle">ISS 2021 Submission 5899</p>
+	</div>
+	<div class="navbar_anchors"  id = "navbar_sticky">
+		<a href="#gridImages">Grid of Images</a>
+		<a href="#gridFolders">Grid of Folders</a>
+		<a href="#imageViewer">Image Viewer</a>
+		<a href="#mindMap">Mind Map</a>
+	</div>
+
+
+
+	<div class="navbar_other_pages" id="navbar_other_pages">
+		<a href="../index.html">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Deformation
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="gifsDemoByShape.html">Grouped by Shape</a>
+				<a href="gifsDemoByContent.html">Grouped by Content</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Constraints
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="constraintsMovements.html">Physical Objects Occlusion</a>
+				<a href="constraintsGamutShapes.html">Freeform Display Shapes</a>
+			</div>
+		</div>
+		<a href="videos.html">Decal Videos</a>
+		
+	</div>
+
+	<div class="main">	
+		<article>
+			<header>
+			</header>
+
+			<section  style="padding-top: -50px; margin-top: -50px;">
+				
+			 	<a name="gridImages"></a>
+			 	<br>
+				<section>
+					<p>Grid of Images</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Circle_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Circle_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Circle_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Circle_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Pentagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Pentagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Pentagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Pentagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Hexagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Hexagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Hexagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Hexagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Octagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Octagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Octagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Octagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Freeform4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Donut_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Donut_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Donut_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Donut_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Separate_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Separate_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Separate_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridImages_Separate_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+			 	<a name="gridFolders"></a>
+			 	<br>
+				<section>
+					<p>Grid of Folders</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Circle_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Circle_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Circle_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Circle_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Pentagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Pentagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Pentagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Pentagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Hexagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Hexagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Hexagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Hexagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Octagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Octagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Octagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Octagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Freeform4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Donut_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Donut_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Donut_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Donut_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Separate_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Separate_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Separate_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/GridFolders_Separate_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+			 	<a name="imageViewer"></a>
+			 	<br>
+				<section >
+					<p>Image Viewer</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Circle_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Circle_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Circle_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Circle_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Pentagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Pentagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Pentagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Pentagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Hexagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Hexagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Hexagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Hexagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Octagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Octagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Octagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Octagon_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Freeform4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Donut_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Donut_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Donut_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Donut_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Separate_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Separate_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Separate_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/ImageViewer_Separate_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+			 	<a name="mindMap"></a>
+			 	<br>
+				<section>
+					<p>Mind Map</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Circle_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Circle_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Circle_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Circle_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Pentagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Pentagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Pentagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Pentagon_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Hexagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Hexagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Hexagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Hexagon_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Octagon_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Octagon_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Octagon_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Octagon_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform2_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform3_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Freeform4_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Donut_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Donut_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Donut_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Donut_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Separate_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Separate_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Separate_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/gamutShapes/MindMap_Separate_MinDist_MaxDist.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+
+			</section>
+		<!-- 	<form action="gifsDemoByContent.html">
+				<input type="submit" value="Group by Content Type">
+			</form> -->
+
+		</article>
+	</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar_sticky");
+		var navbarIndex = document.getElementById("navbar_other_pages");
+		var sticky = navbar.offsetTop/4;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				navbar.style.zIndex = "1"; 
+				navbarIndex.style.display = "none";
+			} else {
+				navbar.classList.remove("sticky");
+				navbar.style.zIndex = "0"; 
+				navbarIndex.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>

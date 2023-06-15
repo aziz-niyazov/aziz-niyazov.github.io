@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Physical Objects Movements</title>
+	<link rel="stylesheet" href="styleDemo.css">
+	<meta name="keywords" content="HCI, Interactive Decals">
+	<!-- <meta name="description" content="Study on FreeForm Displays"> -->
+	<!-- <meta http-equiv="Content-Type" content="text/html;" charset="utf-8"> -->
+	<!-- <meta name="author" content="Marcos Serrano"> -->
+	<!-- <base href="http://www.irit.fr/greetings/" target="_blank"> -->
+</head>
+
+<body>
+	<div class="header" >
+		<p>Interactive Decals: Developing Pervasive Freeform Interfaces Using Deformable Graphical Elements with Constraints</p>
+		<p class="subtitle">ISS 2021 Submission 5899</p>
+	</div>
+	<div class="navbar_anchors"  id = "navbar_sticky">
+		<a href="#gridImages">Grid of Images</a>
+		<a href="#gridFolders">Grid of Folders</a>
+		<a href="#imageViewer">Image Viewer</a>
+		<a href="#mindMap">Mind Map</a>
+	</div>
+
+
+
+	<div class="navbar_other_pages" id="navbar_other_pages">
+		<a href="../index.html">Home</a>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Deformation
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="gifsDemoByShape.html">Grouped by Shape</a>
+				<a href="gifsDemoByContent.html">Grouped by Content</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Decal Constraints
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="constraintsMovements.html">Physical Objects Occlusion</a>
+				<a href="constraintsGamutShapes.html">Freeform Display Shapes</a>
+			</div>
+		</div>
+		<a href="videos.html">Decal Videos</a>
+		
+	</div>
+		
+	<div class="main">	
+		<article>
+
+			
+			<section style="padding-top: -50px; margin-top: -50px;">
+				
+			 	<a name="gridImages"></a>
+				<br>
+			 	<section>
+					<p>Grid of Images</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_0_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_1_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_5_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_6_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Mug_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Mug_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_0_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_1_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_5_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_6_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridImages_Book_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridImages_Book_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+			 	<a name="gridFolders"></a>
+			 	<br>
+			 	<section>
+					<p>Grid of Folders</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_0_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_1_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_5_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_6_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Mug_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Mug_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_0_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_1_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_5_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_6_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/GridFolders_Book_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/GridFolders_Book_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+			 	<a name="imageViewer"></a>
+				<br>
+				<section >
+					<p>Image Viewer</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Mug_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+										<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_2_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_3_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_3_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_3_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_3_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_4_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_4_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_4_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_4_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_7_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_8_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/ImageViewer_Book_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/ImageViewer_Book_9_MinDist_AnchorLine.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+				<a name="mindMap"></a>
+			 	<br>
+			 	<section >
+					<p>Mind Map</p>
+					<table>
+						<tr>
+							<td>No_Deformation</td>
+							<td>Warping</td>
+							<td>Decals_Min </td>
+							<td>Decals_Combined</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_0_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_1_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_2_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_5_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_6_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_7_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_8_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Mug_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Mug_9_MinDist_MaxDist.png">
+							</td>
+						</tr>
+										<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_0_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_0_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_0_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_0_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_1_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_1_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_1_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_1_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_2_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_2_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_2_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_2_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_5_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_5_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_5_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_5_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_6_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_6_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_6_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_6_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_7_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_7_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_7_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_7_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_8_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_8_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_8_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_8_MinDist_MaxDist.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="snapshots/MindMap_Book_9_BaselineWarpImage_MX.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_9_BaselineWarpImage_CD.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_9_MinDist.png">
+							</td>
+							<td>
+								<img src="snapshots/MindMap_Book_9_MinDist_MaxDist.png">
+							</td>
+						</tr>
+			 		</table>
+			 	</section>
+
+			</section>
+
+			<!-- <form action="snapshotsDemoByShape.html">
+				<input type="submit" value="Group by Shape">
+			</form> -->
+		</article>
+	</div>
+
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar_sticky");
+		var navbarIndex = document.getElementById("navbar_other_pages");
+		var sticky = navbar.offsetTop/4;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				navbar.style.zIndex = "1"; 
+				navbarIndex.style.display = "none";
+			} else {
+				navbar.classList.remove("sticky");
+				navbar.style.zIndex = "0"; 
+				navbarIndex.style.display = "block";
+			}
+		}
+	</script>
+</body>
+</html>
