@@ -5,7 +5,7 @@ type: conference
 doi: "https://doi.org/10.1145/3488538"
 venue: ACM ISS 2021
 authors: "Aziz Niyazov, Nicolas Mellado, Loic Barthe, Marcos Serrano"
-pdf: "cv.pdf"
+pdf: "https://hal.science/hal-03380583v1/file/Dynamic_Decals_ISS_2021_noCopyright.pdf"
 demo: "https://www.youtube.com/watch?v=_k1AbSDwhUA&ab_channel=ElipseIrit"
 video: "https://www.youtube.com/watch?v=as4GxBr8Tio&t=566s&ab_channel=ACMSIGCHI"
 icon_pdf: fa fa-file-pdf-o

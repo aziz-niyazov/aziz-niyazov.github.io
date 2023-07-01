@@ -5,7 +5,7 @@ type: conference
 doi: "https://doi.org/10.1145/3544548.3580873"
 venue: ACM CHI 2023
 authors: "Aziz Niyazov, Barrett Ens, Kadek Ananta Satriadi, Nicolas Mellado, Loic Barthe, Tim Dwyer, Marcos Serrano"
-pdf: "cv.pdf"
+pdf: "https://hal.science/hal-04042351v1/file/User_driven_Constraints_for_Dynamic_Layouts%20_noCopyright.pdf"
 video: ""
 demo: "https://www.youtube.com/watch?v=S4maGFytVww&ab_channel=ElipseIrit"
 icon_pdf: fa fa-file-pdf-o
